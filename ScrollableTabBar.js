@@ -6,9 +6,7 @@ import {
     ScrollView,
     Text,
     Dimensions,
-    ViewPropTypes,
 } from "react-native";
-import PropTypes from "prop-types";
 
 import Button from "./Button";
 
@@ -236,34 +234,6 @@ export default class ScrollableTabBar extends Component {
         this.updateView({ value: this.props.scrollValue.__getValue() });
     };
 }
-
-ScrollableTabBar.propTypes = {
-    goToPage: PropTypes.func,
-    activeTab: PropTypes.number,
-    tabs: PropTypes.array,
-    backgroundColor: PropTypes.string,
-    activeTextColor: PropTypes.string,
-    inactiveTextColor: PropTypes.string,
-    scrollOffset: PropTypes.number,
-    style: ViewPropTypes.style,
-    tabStyle: ViewPropTypes.style,
-    tabsContainerStyle: ViewPropTypes.style,
-    textStyle: Text.propTypes.style,
-    renderTab: PropTypes.func,
-    underlineStyle: ViewPropTypes.style,
-    onScroll: PropTypes.func,
-};
-
-ScrollableTabBar.defaultProps = {
-    scrollOffset: 52,
-    activeTextColor: "navy",
-    inactiveTextColor: "black",
-    backgroundColor: null,
-    style: {},
-    tabStyle: {},
-    tabsContainerStyle: {},
-    underlineStyle: {},
-};
 
 const styles = StyleSheet.create({
     tab: {

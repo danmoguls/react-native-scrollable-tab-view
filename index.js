@@ -6,9 +6,7 @@ import {
     ScrollView,
     StyleSheet,
     InteractionManager,
-    ViewPropTypes,
 } from "react-native";
-import PropTypes from "prop-types";
 
 import PagerView from "react-native-pager-view";
 
@@ -355,42 +353,6 @@ export default class ScrollableTabView extends Component {
         );
     }
 }
-
-ScrollableTabView.propTypes = {
-    tabBarPosition: PropTypes.oneOf([
-        "top",
-        "bottom",
-        "overlayTop",
-        "overlayBottom",
-    ]),
-    initialPage: PropTypes.number,
-    page: PropTypes.number,
-    onChangeTab: PropTypes.func,
-    onScroll: PropTypes.func,
-    renderTabBar: PropTypes.any,
-    tabBarUnderlineStyle: ViewPropTypes.style,
-    tabBarBackgroundColor: PropTypes.string,
-    tabBarActiveTextColor: PropTypes.string,
-    tabBarInactiveTextColor: PropTypes.string,
-    tabBarTextStyle: PropTypes.object,
-    style: ViewPropTypes.style,
-    contentProps: PropTypes.object,
-    scrollWithoutAnimation: PropTypes.bool,
-    locked: PropTypes.bool,
-    prerenderingSiblingsNumber: PropTypes.number,
-};
-
-ScrollableTabView.defaultProps = {
-    tabBarPosition: "top",
-    initialPage: 0,
-    page: -1,
-    onChangeTab: () => {},
-    onScroll: () => {},
-    contentProps: {},
-    scrollWithoutAnimation: false,
-    locked: false,
-    prerenderingSiblingsNumber: 0,
-};
 
 const styles = StyleSheet.create({
     container: {

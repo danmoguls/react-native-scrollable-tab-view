@@ -1,11 +1,11 @@
 import React from "react";
 
 export default class StaticContainer extends React.Component {
-    shouldComponentUpdate(nextProps: Object): boolean {
+    shouldComponentUpdate(nextProps: Object) {
         return !!nextProps.shouldUpdate;
     }
 
-    render(): ?ReactElement {
+    render() {
         var child = this.props.children;
         if (child === null || child === false) {
             return null;

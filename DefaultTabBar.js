@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Animated, ViewPropTypes } from "react-native";
-import PropTypes from "prop-types";
+import { StyleSheet, Text, View, Animated } from "react-native";
 
 import Button from "./Button";
 
@@ -74,25 +73,6 @@ export default class DefaultTabBar extends Component {
         );
     }
 }
-
-DefaultTabBar.propTypes = {
-    goToPage: PropTypes.func,
-    activeTab: PropTypes.number,
-    tabs: PropTypes.array,
-    backgroundColor: PropTypes.string,
-    activeTextColor: PropTypes.string,
-    inactiveTextColor: PropTypes.string,
-    textStyle: Text.propTypes.style,
-    tabStyle: ViewPropTypes.style,
-    renderTab: PropTypes.func,
-    underlineStyle: ViewPropTypes.style,
-};
-
-DefaultTabBar.defaultProps = {
-    activeTextColor: "navy",
-    inactiveTextColor: "black",
-    backgroundColor: null,
-};
 
 const styles = StyleSheet.create({
     tab: {
