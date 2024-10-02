@@ -74,6 +74,12 @@ export default class DefaultTabBar extends Component {
     }
 }
 
+DefaultTabBar.defaultProps = {
+    activeTextColor: "navy",
+    inactiveTextColor: "black",
+    backgroundColor: null,
+};
+
 const styles = StyleSheet.create({
     tab: {
         flex: 1,

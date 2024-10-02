@@ -235,6 +235,17 @@ export default class ScrollableTabBar extends Component {
     };
 }
 
+ScrollableTabBar.defaultProps = {
+    scrollOffset: 52,
+    activeTextColor: "navy",
+    inactiveTextColor: "black",
+    backgroundColor: null,
+    style: {},
+    tabStyle: {},
+    tabsContainerStyle: {},
+    underlineStyle: {},
+};
+
 const styles = StyleSheet.create({
     tab: {
         height: 49,

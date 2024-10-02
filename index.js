@@ -354,6 +354,18 @@ export default class ScrollableTabView extends Component {
     }
 }
 
+ScrollableTabView.defaultProps = {
+    tabBarPosition: "top",
+    initialPage: 0,
+    page: -1,
+    onChangeTab: () => {},
+    onScroll: () => {},
+    contentProps: {},
+    scrollWithoutAnimation: false,
+    locked: false,
+    prerenderingSiblingsNumber: 0,
+};
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
