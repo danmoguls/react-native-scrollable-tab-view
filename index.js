@@ -223,7 +223,7 @@ export default class ScrollableTabView extends Component {
                         idx,
                         this.state.currentPage
                     )}
-                    style={{ width: this.state.containerWidth }}
+                    style={{ flex: 1, width: this.state.containerWidth }}
                 >
                     {this._keyExists(this.state.sceneKeys, key) ? (
                         child
